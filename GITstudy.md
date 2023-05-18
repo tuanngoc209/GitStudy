@@ -95,7 +95,7 @@ Một trong số những VCS thông dụng nhất là Git.
   <br>Như vậy khi push lại code lên remote repository, nhánh mới sẽ không bị conflict,
   người quản trị sẽ merge được code vào nhánh chính.
 
-### Tạo project và đưa lên gitlab lần đầu: ví dụ trường hợp đưa project có sẵn lên gitlab
+# Tạo project và đưa lên gitlab lần đầu: ví dụ trường hợp đưa project có sẵn lên gitlab
 1. Sau thao tác chọn blank project ban đầu trên gitlab sẽ hiện lên các hướng dẫn sau:
 <br>![img.png](picture/img6.png)
 
