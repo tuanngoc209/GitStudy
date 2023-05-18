@@ -25,7 +25,9 @@ Một trong số những VCS thông dụng nhất là Git.
   ghi lại nội dung của toàn bộ tập tin tại thời điểm đó và tạo ra một tham chiếu. Thậm chí,
   để không lãng phí tài nguyên, nếu tập tin của bạn không có sự thay đổi nào, Git sẽ không
   lưu trữ tập tin đó lại một lần nữa mà chỉ tạo một liên kết tới tập tin gốc đã tồn tại trước đó:
-<br>![img.png](picture/img.png)
+<br>![img.png](pictures/img.png)
+  <br><br> VD: tạo 2 commit liên tiếp nhưng không thay đổi data thì sẽ không tạo được commit mới
+  <br>![2 lan commit lien tiep khong change data.jpg](pictures%2F2%20lan%20commit%20lien%20tiep%20khong%20change%20data.jpg)
 
 # Mỗi tập tin trong Git được quản lý dựa trên ba trạng thái: Modified, Stager và Committed
 - Modified: Đây là trạng thái khi bạn đã thay đổi code, tập tin nhưng chưa commit vào cơ sở
@@ -42,14 +44,20 @@ Một trong số những VCS thông dụng nhất là Git.
 
 Điều này tạo ra 3 phần riêng biệt của một dự án sử dụng Git: thư mục làm việc
 (working directory), khu vực tổ chức (staging area), git directory (repository):
-<br>![img.png](picture/img2.png)
+<br>![img.png](pictures/img2.png)
 - Working directory: Là bản sao một phiên bản của dự án. Những tập tin này được kéo về (pulled) từ cơ sở dữ liệu được nén lại trong thư mục Git và lưu trên ổ cứng cho bạn sử dụng hoặc chỉnh sửa. Hoặc khi bạn tạo bất kỳ thư mục nào trong dự án của mình, thư mục đó sẽ nằm trong thư mục làm việc (working directory) hoặc trong thư mục cục bộ. Về cơ bản working directory là thư mục cục bộ trên máy tính cá nhân cho các tệp dự án của bạn.
 - Staging area: Là một tập tin chứa trong thư mục Git, nó chứa thông tin về những gì sẽ được commit trong lần commit sắp tới.
 - Git directory (repository): Đây là nơi mà các tệp đã ở trạng thái commit nằm. Nó lưu trữ các “siêu dữ kiện” (metadata) và cơ sở dữ liệu cho dự án của bạn. Đồng thời nó là phần được sao lưu về khi bạn tạo một bản sao (clone) của một repository.
 
+<br>VD: 
+- File ở Working directory gõ `git add .` -> file được chuyển tới Staging area
+- Tiếp tục gõ `git commit -m "commit 2"` -> file được chuyển tới Git directory
+- Tiếp tục gõ `git push` -> file được chuyển tới Remote repository
+  <br>![push remote.jpg](pictures%2Fpush%20remote.jpg)
+
 # Git basic (commit, branch, pull, push, merge)?
 ### Quy trình làm việc (workflow) hoàn chỉnh của Git
-<br>![img.png](picture/img3.png)
+<br>![img.png](pictures/img3.png)
 - Git add: Đưa code, thư mục hiện tại vào Staging Area, xác định phiên bản sẽ được commit trong lần commit tiếp theo.
   <br>`git add .` . hoặc tên file chính xác để đưa file đó vào Staging area
 - Git commit: Cam kết phiên bản trong Staging Area.
@@ -79,12 +87,12 @@ Một trong số những VCS thông dụng nhất là Git.
 
 *MERGE*: chuyển sang nhánh main, merge beta vào main. Các commit sẽ đan xen theo đúng time
 được tạo vào nhánh được hợp nhất.
-<br>![img_1.png](picture/img4.png)
+<br>![img_1.png](pictures/img4.png)
 
 *REBASE*:
 1. Chuyển sang nhánh beta, sau đó cơ sở lại nhánh beta theo nhánh main, các commit của nhánh beta chỉ được ***nối tiếp đằng sau*** các commit nhánh main
 2. Thực hiện như merge ở trên
-   <br>![img.png](picture/img5.png)
+   <br>![img.png](pictures/img5.png)
 
 - Trường hợp sau khi đã hoàn thành phát triển tính năng ở nhánh mới, nhưng trong thời gian
   đó nhánh develop đã được cập nhật:<br>
@@ -97,7 +105,7 @@ Một trong số những VCS thông dụng nhất là Git.
 
 # Tạo project và đưa lên gitlab lần đầu: ví dụ trường hợp đưa project có sẵn lên gitlab
 1. Sau thao tác chọn blank project ban đầu trên gitlab sẽ hiện lên các hướng dẫn sau:
-<br>![img.png](picture/img6.png)
+<br>![img.png](pictures/img6.png)
 
 2. Nhập lần lượt: Git global setup
    <br>`git config --global user.name "Tuan Ngoc Nguyen"`<br>
@@ -111,4 +119,6 @@ Một trong số những VCS thông dụng nhất là Git.
    `git commit -m "Initial commit"`<br>
    `git push -u origin master`
 
-abc
+4. Các VD về git add, commit, push đã đưược đề cập ở trên. Ở đây sẽ nối tiếp:
+   <br>`Git status` sử dụng để hiển thị trạng thái của Git Add và Git commit, trước và sau khi add đã có sự thay đổi
+   <br>![Status.png](pictures%2FStatus.png)
