@@ -9,7 +9,7 @@ sẽ cho phép bạn dễ dàng quay lại một phiên bản trước của t�
 VCS sẽ lưu trữ tất cả các file trong toàn bộ dự án và ghi lại toàn bộ lịch sử thay đổi của file. 
 Mỗi sự thay đổi sẽ được lưu lại thành một version (phiên bản) hoàn toàn mới. 
 Một trong số những VCS thông dụng nhất là Git.
-
+thử test->>>>>>
 # What is Git?
 - Git là một hệ thống quản lý phiên bản phân tán (Distributed Version Control System – DVCS)
   ra đời vào năm 2005 và hiện được dùng rất phổ biến. So với các hệ thống quản lý phiên bản
