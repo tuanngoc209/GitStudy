@@ -13,7 +13,7 @@ trạng thái: Modified, Stager và Committed ](#c)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;[4. Các VD về git add, commit, push đã được đề cập ở trên. Ở đây sẽ nối tiếp: Tạo nhánh mới](#l)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;[5. Gộp nhiều commit](#m)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;[6. Rebase nhánh phát triển tính năng riêng theo nhánh main, nhưng trong thời gian đó nhánh main đã được cập nhật](#n)
-# I. Version Control là gì? <a id="a"></a>
+# I. Version Control là gì? <a id="a"></a> [(Trở lại menu)](#menu)
 - Version Control System: ***phần mềm quản lý phiên bản mã nguồn***
 - Khi lập trình, sẽ có lúc bạn lỡ tay xoá một đoạn code vì nghĩ rằng đoạn
   code đó không phù hợp nữa, nhưng sau đó lại phát hiện là đoạn code đó bạn vẫn cần dùng,
