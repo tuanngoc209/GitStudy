@@ -190,3 +190,6 @@ sau khi ấn sẽ hiện lên màn hình để đặt note cho commit mới
 <br>![status het conflict.jpg](pictures%2Fstatus%20het%20conflict.jpg)
 - `git rebase --continue` tiếp tục rebase, k còn conflict sẽ thành công, nhưng toàn bộ lịch sử commit của main sẽ có trong sub, tùy yêu cầu ta sẽ gộp các commit hoặc k, sau đó push lại lên remote
 <br>![rebase continue.jpg](pictures%2Frebase%20continue.jpg)
+
+  
+  [(Trở lại menu)](#menu)
